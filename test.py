@@ -1,8 +1,8 @@
-from main import add
+from main import subtract
 
-def test_add():
-	assert add(11, 11) == 22
+def test_subtract():
+	assert subtract(22, 11) == 11
 
 if __name__ == "__main__":
-	test_add()
+	test_subtract()
 	print("All tests passed.")
