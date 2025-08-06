@@ -1,8 +1,7 @@
-def add(a, b):
-	return a + b
+import numpy
 
-def test_add():
-	assert add(2, 5) == 7
+def add(a, b):
+	return numpy.add(a, b)
 
 if __name__ == "__main__":
-	test_add()
+	print("add(2, 3):", add(2, 3))
