@@ -29,7 +29,15 @@ jobs:
             new_tag="v$major.$minor.$patch"
             echo "tag=$new_tag" >> $GITHUB_OUTPUT
           fi
-
+      
+      -name: Set up Python
+       uses: actions/setup-python@v4
+       with:
+        python-version: '3.11'
+      
+      -name: Run test.py
+       run: python test.py
+       
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
