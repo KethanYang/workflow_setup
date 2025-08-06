@@ -2,7 +2,7 @@ def add(a, b):
 	return a + b
 
 def test_add():
-	assert add(3, 5) == 1 #Failing cause math not good
+	assert add(2, 5) == 7
 
 if __name__ == "__main__":
 	test_add()
